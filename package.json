@@ -1,0 +1,28 @@
+{
+  "name": "trombinoclock",
+  "version": "1.0.0",
+  "description": "Trombinoclock",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-clock-Katsudon/S04-Trombinoclock-BNoClock.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-clock-Katsudon/S04-Trombinoclock-BNoClock/issues"
+  },
+  "homepage": "https://github.com/O-clock-Katsudon/S04-Trombinoclock-BNoClock#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "pg": "^8.11.3"
+  }
+}
