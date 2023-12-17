@@ -55,9 +55,6 @@ const studentController = {
 
             datamapper.removesdtwithnoprofileimage();
 
-
-            const promos = await datamapper.findAllPromos();
-
             res.render("index");
 
  
