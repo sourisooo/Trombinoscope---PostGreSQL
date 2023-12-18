@@ -1,5 +1,11 @@
+CREATE TABLE IF NOT EXISTS "login" (
+  "id" INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  "name" VARCHAR(128),
+  "password" VARCHAR(255)
+);
 
-
+INSERT INTO "login" ("name", "password") VALUES
+('admin','admin')
 
 
 CREATE TABLE IF NOT EXISTS "promo" (
