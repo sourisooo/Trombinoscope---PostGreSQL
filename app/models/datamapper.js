@@ -101,7 +101,6 @@ const datamapper = {
             console.error("ERROR :",error);
         }
 
-    
 
     },
 
@@ -127,7 +126,41 @@ const datamapper = {
 
     
 
+    },
+
+
+    async checkuser(user){
+
+
+        const sqlQuery = `
+
+        SELECT * FROM login WHERE name = '${user.name}' AND password = '${user.password}'
+
+
+        `;
+
+        let result;
+
+        try{
+            response = await client.query(sqlQuery);
+
+            result= response.rows[0];
+
+            // console.log(response.rows);
+
+        }
+        catch(error){
+            console.error("ERROR :",error);
+        }
+
+        return result;
+
+
+
     }
+
+
+
 
 };
 
