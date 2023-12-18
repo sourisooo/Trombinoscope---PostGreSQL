@@ -4,4 +4,26 @@
     <a href="/promos">Voir la liste de promos</a>
     <a href="/admin/addStudent">Ajouter un étudiant</a>
 
+    <% if(typeof userl ==='undefined'){ %>
+
+    <a href="/login">Login</a>
+
+    <% } else {%>
+
+     <a href="/logout">Logout</a>
+
+     <% %>
+
+     <% } %>
+
+    <% if (typeof logoutcomplete != 'undefined') { %>
+
+
+    <h3><%=logoutcomplete%></h3>
+
+
+    <% } %>
+
+
+
 <%- include('partials/footer') %>    
