@@ -17,6 +17,17 @@
             <ul>
                 <li><a href="/">Accueil</a></li>
                 <li><a href="/promos">Promos</a></li>
+
+                <% if(typeof userl !=='undefined'){ %>
+
+                <li><a href=#>Welcome <%= userl.name%> </a></li>
+
+                <% } else {%>
+
+                <li><a href=#>Welcome guest</a></li>
+
+                <% } %>
+
             </ul>
         </nav>
     </header>
