@@ -1,24 +1,24 @@
-// const { Client } = require("pg");
-// const fs = require('fs');
+const { Client } = require("pg");
+const fs = require('fs');
 
-// async function initdb() {
+async function initdb() {
 
-// const client = new Client('postgresql://postgres:random@localhost/mytrombydb');
+const client = new Client('postgresql://postgres:random@localhost/mytrombydb');
 
-// await client.connect();
+await client.connect();
 
-// const sqlFileContent = fs.readFileSync('./createdb.sql', 'utf8');
-// const result = await client.query(sqlFileContent)
+const sqlFileContent = fs.readFileSync('./createdb.sql', 'utf8');
+const result = await client.query(sqlFileContent)
 
-// // const result = await client.query('RELOAD;');
+// const result = await client.query('RELOAD;');
 
-// await client.end();
+await client.end();
 
-// console.log(result);
+console.log(result);
 
-// ;}
+;}
 
-// console.log("read done");
-// initdb();
+console.log("read done");
+initdb();
 
 
